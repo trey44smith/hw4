@@ -10,7 +10,7 @@
 
   $tmpname = $img['tmp_name'];
   $extn = strtolower(end(explode('.', $name)));
-  $path = '../../resources/active_image.'.$extn;
+  $path = '../../resources/active_image.jpg';
   $error = false;
   $message = "";
 

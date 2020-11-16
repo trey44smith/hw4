@@ -3,7 +3,7 @@
 namespace trey\hw4\views\helpers\crop;
 
 $filename = 'active_image.jpg';
-$newfilename = 'new.jpg';
+$newfilename = '/Applications/MAMP/htdocs/hw4/src/resources/active_image.jpg';
 
 $imageSize = getimagesize($filename);
 $currentWidth = $imageSize[0];
@@ -11,10 +11,11 @@ $currentHeight = $imageSize[1];
 
 
 
-$canvas =imagecreatetruecolor(360, 360);
+
 $currentImage = imagecreatefromjpeg($filename);
-imagecopy($currentImage, $canvas,0,0,0,0,$currentWidth,$currrentHeight);
-imagejpeg($canvas,$newfilename,100);
+$currentImage = imagescale($currentImage, 360, 360);
+imagejpeg($currentImage,$newfilename,100);
+
 
 echo "Image cropped succesfully";
 
