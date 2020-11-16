@@ -18,4 +18,5 @@
       $jpgView -> render();
     }
 
+
 ?>

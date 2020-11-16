@@ -1,5 +1,6 @@
 <?php
 
+  namespace trey\hw4\views\helpers\upload;
 
   $img = $_FILES['image'];
   $size = $img['size'];

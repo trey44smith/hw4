@@ -8,12 +8,10 @@ use trey\hw4\views\element as E;
 class DisplayJpgView extends E\Element{
 
   function render(){
-    
-      echo "<img src='/../../models/resources/active_image.jpg' alt='jigsaw image'>";
-
+    ?>
+    <img src="<?php echo '/hw4/src/resources/active_image.jpg'?>" />
+    <?php
   }
-
-
   function __construct(){
 
   }
