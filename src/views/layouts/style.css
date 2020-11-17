@@ -6,7 +6,7 @@
   height: 120px;
   width: 120px;
   background-image: url("/hw4/src/resources/active_image.jpg");
-  background-position: 0px 240px;
+  background-position: left top;
   background-repeat: no-repeat;
 }
 #box1 {
@@ -16,6 +16,9 @@
   left: 145px;
   height: 120px;
   width: 120px;
+  background-image: url("/hw4/src/resources/active_image.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 #box2 {
   border: 1px solid black;
@@ -24,6 +27,9 @@
   left: 270px;
   height: 120px;
   width: 120px;
+  background-image: url("/hw4/src/resources/active_image.jpg");
+  background-position: right top;
+  background-repeat: no-repeat;
 }
 #box3 {
   border: 1px solid black;
@@ -32,6 +38,9 @@
   left: 20px;
   height: 120px;
   width: 120px;
+  background-image: url("/hw4/src/resources/active_image.jpg");
+  background-position: left center;
+  background-repeat: no-repeat;
 }
 #box4 {
   border: 1px solid black;
@@ -40,6 +49,9 @@
   left: 145px;
   height: 120px;
   width: 120px;
+  background-image: url("/hw4/src/resources/active_image.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 #box5 {
   border: 1px solid black;
@@ -48,6 +60,9 @@
   left: 270px;
   height: 120px;
   width: 120px;
+  background-image: url("/hw4/src/resources/active_image.jpg");
+  background-position: right center;
+  background-repeat: no-repeat;
 }
 #box6 {
   border: 1px solid black;
@@ -56,6 +71,9 @@
   left: 20px;
   height: 120px;
   width: 120px;
+  background-image: url("/hw4/src/resources/active_image.jpg");
+  background-position: left bottom;
+  background-repeat: no-repeat;
 }
 #box7 {
   border: 1px solid black;
@@ -64,6 +82,9 @@
   left: 145px;
   height: 120px;
   width: 120px;
+  background-image: url("/hw4/src/resources/active_image.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
 }
 #box8 {
   border: 1px solid black;
@@ -72,8 +93,11 @@
   left: 270px;
   height: 120px;
   width: 120px;
+  background-image: url("/hw4/src/resources/active_image.jpg");
+  background-position: right bottom;
+  background-repeat: no-repeat;
 }
 
 .selected{
-  border: 3px solid red;
+  border: '3px solid red';
 }

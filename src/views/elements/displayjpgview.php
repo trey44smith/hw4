@@ -12,8 +12,8 @@ class DisplayJpgView extends E\Element{
 
     <div>
       <div id="box0"></div>
-      <div id="box1"></div>
-      <div id="box2"></div>
+      <div id="box1" onclick="borderChange();"></div>
+      <div id="box2" ></div>
       <div id="box3"></div>
       <div id="box4"></div>
       <div id="box5"></div>
@@ -24,6 +24,11 @@ class DisplayJpgView extends E\Element{
 
       <script> var permutation = <?php print json_encode(unserialize(file_get_contents('/Applications/MAMP/htdocs/hw4/src/resources/active_image.txt')));?>;
 
+              function borderChange(){
+                document.getElementById("box1").style.border = "3px solid red";
+
+              }
+      </script>
     <?php
   }
   function __construct(){

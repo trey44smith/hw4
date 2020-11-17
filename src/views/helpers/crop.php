@@ -11,7 +11,7 @@ $currentHeight = $imageSize[1];
 
 
 
-
+$newfilename = '/Applications/MAMP/htdocs/hw4/src/resources/active_image.jpg';
 $currentImage = imagecreatefromjpeg($filename);
 $currentImage = imagescale($currentImage, 360, 360);
 imagejpeg($currentImage,$newfilename,100);
