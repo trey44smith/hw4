@@ -31,13 +31,35 @@
   }
 
   if (!$error){
-    $didupload = move_uploaded_file($tmpname, $path);
-    if($didupload){
-      $message.= "File uploaded\n";
+    $newfilename = '/Applications/MAMP/htdocs/hw4/src/resources/active_image.jpg';
+    switch($extn){
+      case "jpg":
+      case "jpeg":
+        $currentImage = imagecreatefromjpeg($tmpname);
+        break;
+      case "png":
+        $currentImage = imagecreatefrompng($tmpname);
+        break;
+      case "gif":
+        $currentImage = imagecreatefromgif($tmpname);
+        break;
     }
-    else{
-      $message.= "File not uploaded\n";
+
+    $currentImage = imagescale($currentImage, 360, 360);
+    imagejpeg($currentImage,$newfilename,100);
+    $message.= "File uploaded and scaled\n";
+
+    $array = array(0, 1, 2, 3, 4, 5, 6, 7 ,8);
+    for ($i=0; $i < 8; $i++) {
+      $temp = $array[$i];
+      $index = rand($i+1, 8);
+      $array[$i] = $array[$index];
+      $array[$index] = $temp;
     }
+
+    $file = fopen('/Applications/MAMP/htdocs/hw4/src/resources/active_image.txt', 'w');
+    fwrite($file, serialize($array));
+    fclose($file);
   }
 
   echo $message;
