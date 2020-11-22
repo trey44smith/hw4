@@ -45,6 +45,7 @@ class DisplayJpgView extends E\Element{
                     setTimeout(function() {
                       alert("Congrats! Jigsaw solved!");
                     },1)
+                    location.reload();
                   }
                 }
               }
