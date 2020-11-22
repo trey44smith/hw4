@@ -1,4 +1,35 @@
-#1 can't get image to crop
-- need to resize image not crop it
-#2 cant get permutations to write to file
--
+Create Layout using MVA #1
+- use MVA to create and display layout
+  - successfully completed
+
+Handle File Upload #2
+- Check file extension and size
+  - completed
+  - displays proper messages and allows user to return to home page
+
+Resize Image #3
+- resize image to 360px x 360px
+  - ginsihed and got image to display in 3x3 box pattern
+
+Scramble Image #4
+- randomly scramble the image
+  - completed
+  - used rand function to jumble to image
+  - user can successfully swap images
+  - page alerts user upon successful completion of jigsaw
+
+Image Change #5
+- image not updating properly when a new image is uploaded while another image is displayed
+  - fixed by not caching the website
+  - page also reloads properly after leaving the alert message
+
+
+Monolog Logging #6
+- use monolog to log image upload attempts
+  - completed
+  - jigsaw.log is updated whenever a user attempts to upload a new image
+
+
+#
+- 
+  -
