@@ -1,13 +1,8 @@
 <?php
 
 namespace trey\hw4\views\layouts\header;
-
 require_once 'layout.php';
-
-
 use trey\hw4\views\layouts as L;
-
-
 
 class Header extends L\Layout{
 
@@ -19,6 +14,7 @@ class Header extends L\Layout{
         <h1>Community Jigsaw</h1>
     </head>
 
+
     <?php
   }
 
@@ -27,6 +23,4 @@ class Header extends L\Layout{
   }
 
 }
-
-
 ?>

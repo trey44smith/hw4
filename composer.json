@@ -2,4 +2,9 @@
     "require": {
         "monolog/monolog": "2.1.1"
     }
+    "autoload": {
+    "psr-4": {
+        "trey\hw4\views\helpers\upload"
+    }
+}
 }

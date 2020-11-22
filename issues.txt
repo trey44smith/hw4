@@ -1,0 +1,4 @@
+#1 can't get image to crop
+- need to resize image not crop it
+#2 cant get permutations to write to file
+-
