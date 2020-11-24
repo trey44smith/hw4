@@ -9,7 +9,7 @@ Handle File Upload #2
 
 Resize Image #3
 - resize image to 360px x 360px
-  - ginsihed and got image to display in 3x3 box pattern
+  - finished and got image to display in 3x3 box pattern
 
 Scramble Image #4
 - randomly scramble the image
@@ -31,5 +31,5 @@ Monolog Logging #6
 
 
 #
-- 
+-
   -

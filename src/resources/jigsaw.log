@@ -1,14 +1,2 @@
-<?php
-
-use Monolog\Logger;
-use Monolog\Handler\StreamHandler;
-
-// create a log channel
-$log = new Logger('jigsaw');
-$log->pushHandler(new StreamHandler('hw4/src/resources/jigsaw.log', Logger::WARNING));
-
-// add records to the log
-$log->warning('Foo');
-$log->error('Bar');
-
-?>
+[2020-11-22T19:25:06.203209+00:00] channel-name.INFO: An upload was attempted [] []
+[2020-11-22T19:25:13.093154+00:00] channel-name.INFO: An upload was attempted [] []
